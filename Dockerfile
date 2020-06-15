@@ -30,7 +30,7 @@ COPY init_script.sh /init_script.sh
 RUN chmod +x /init_script.sh
 
 # COPY Spacecraft files
-COPY --chown=www-data:www-data /var/www/html/
+COPY --chown=www-data:www-data development/.  /var/www/html/
 #RUN chmod -R 755 /var/www/html
 
 # Expose Ports
